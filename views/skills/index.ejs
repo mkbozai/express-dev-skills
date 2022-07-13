@@ -9,7 +9,7 @@
     <ul>
       <% skills.forEach(function(s) { %>
         <li>
-          <%= s.skill %>
+          <a href="/skills/<%= s.id %>"><%= s.skill %></a>
             - 
           <%= s.skill ? 'done' : 'not done' %>
         </li>
