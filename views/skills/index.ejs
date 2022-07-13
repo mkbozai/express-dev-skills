@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Express Skills</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Skills</h1>
+    <ul>
+      <% skills.forEach(function(s) { %>
+        <li>
+          <%= s.skill %>
+            - 
+          <%= s.skill ? 'done' : 'not done' %>
+        </li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
