@@ -8,7 +8,7 @@ const skills = [
     getAll,
     getOne,
     create,
-    delete: deleteOne,
+    delete: deleteSkill,
   };
   
   function getAll() {
@@ -26,7 +26,7 @@ const skills = [
     skills.push(skill);
   }
 
-  function deleteOne(id) {
+  function deleteSkill(id) {
     id = parseInt(id);
     const skillIdx = skills.findIndex((s) => s.id === id);
     skills.splice(skillIdx, 1);

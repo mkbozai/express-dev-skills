@@ -3,5 +3,9 @@
 <h1>Skill #<%= skill.id %> </h1>
 <h3><%= skill.skill %></h3>
 <h3>Skill Level: <%= skill.done ? 'A1' : 'Better keep working' %></h3>
+<form action="/skills?_method=DELETE" 
+  method="POST" class="delete-form">
+  <button type="submit">Delete Skill</button>
+</form>
 
 <%- include('../partials/footer') %>
